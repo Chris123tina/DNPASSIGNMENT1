@@ -5,8 +5,35 @@ namespace InMemoryRepositories;
 
 public class UserInMemoryRepository : IUserRepository
 {
-    private List<User> users;
+    private readonly List<User> users = new();
 
+    public UserInMemoryRepository()
+    {
+    users.Add(new User
+    {
+        Id = 1,
+        UserName = "Christina",
+        Password = "1234"
+    });
+
+    users.Add(new User
+    {
+        Id = 2,
+        UserName = "Clara",
+        Password = "5678"
+    });
+
+    users.Add(new User
+    {
+        Id = 3,
+        UserName = "Charlie",
+        Password = "abcd"
+    });
+    }
+        
+    
+    
+    
     public Task<User> AddAsync(User user)
     {
         user.Id = users.Any()

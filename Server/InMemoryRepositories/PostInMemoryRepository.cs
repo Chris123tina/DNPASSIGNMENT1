@@ -6,8 +6,39 @@ namespace InMemoryRepositories;
 public class PostInMemoryRepository : IPostRepository
 {
  
-    private List<Post> posts;
+    private readonly List<Post> posts = new();
     
+    
+    
+    public PostInMemoryRepository ()
+        {
+            posts.Add(new Post
+            {
+                Id = 1,
+                Title = "AI and Humans",
+                Body = "The change in humanity",
+                UserId = 1
+            });
+           
+            posts.Add(new Post
+            {
+                Id = 2,
+                Title = "Religion in 2026",
+                Body = "A closer look into how religion is dying or whatever",
+                UserId = 2
+            });
+            
+            posts.Add(new Post
+            {
+                Id = 3,
+                Title = "This shit again ",
+                Body = "Basically what the title says",
+                UserId = 1
+            });
+            
+            
+            
+        }
     public Task<Post> AddAsync(Post post)
     {
         post.Id = posts.Any()
