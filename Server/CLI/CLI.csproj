@@ -13,4 +13,8 @@
       <ProjectReference Include="..\RepositoryContracts\RepositoryContracts.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="UI\ManagePosts\" />
+    </ItemGroup>
+
 </Project>
