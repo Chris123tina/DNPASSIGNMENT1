@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{C7186E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiContracts", "Shared\ApiContracts\ApiContracts.csproj", "{BC621AF1-D7CC-4F01-B866-4634219080DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication", "Shared\WebApplication\WebApplication.csproj", "{AC6D8794-E463-4599-A437-8C438B33EC9C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,7 @@ Global
 		{73F183E8-1D52-40D2-89F6-054A2EE73E33} = {4A13F73C-468B-40B6-9A83-CACEE6ED3396}
 		{CEC270AA-48A0-408A-A749-92A281EDD0CA} = {4A13F73C-468B-40B6-9A83-CACEE6ED3396}
 		{BC621AF1-D7CC-4F01-B866-4634219080DA} = {C7186E9A-E945-4A55-B30A-7485E02E2244}
+		{AC6D8794-E463-4599-A437-8C438B33EC9C} = {C7186E9A-E945-4A55-B30A-7485E02E2244}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B8F9B1CA-74DB-4FCC-A7CF-6D03324D2351}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -47,5 +50,9 @@ Global
 		{BC621AF1-D7CC-4F01-B866-4634219080DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC621AF1-D7CC-4F01-B866-4634219080DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC621AF1-D7CC-4F01-B866-4634219080DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC6D8794-E463-4599-A437-8C438B33EC9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC6D8794-E463-4599-A437-8C438B33EC9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC6D8794-E463-4599-A437-8C438B33EC9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC6D8794-E463-4599-A437-8C438B33EC9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
