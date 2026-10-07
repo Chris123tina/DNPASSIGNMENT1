@@ -12,7 +12,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileRepositories", "Server\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{C7186E9A-E945-4A55-B30A-7485E02E2244}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiContracts", "Shared\ApiContracts\ApiContracts.csproj", "{BC621AF1-D7CC-4F01-B866-4634219080DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTOs", "Shared\DTOs\DTOs.csproj", "{BC621AF1-D7CC-4F01-B866-4634219080DA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication4", "Shared\WebApplication4\WebApplication4.csproj", "{AC6D8794-E463-4599-A437-8C438B33EC9C}"
 EndProject

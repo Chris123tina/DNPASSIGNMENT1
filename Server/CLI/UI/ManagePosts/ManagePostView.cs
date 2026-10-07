@@ -40,12 +40,12 @@ public class ManagePostView
             IQueryable<Comment> comments =
                 commentRepository
                     .GetMany()
-                    .Where(comment => comment.postId == post.Id);
+                    .Where(comment => comment.PostId == post.Id);
             
             foreach (Comment comment in comments)
             {
                 Console.WriteLine(
-                    $"User {comment.userId}: {comment.body}");
+                    $"User {comment.UserId}: {comment.Body}");
             }
         }
         catch (InvalidOperationException e)

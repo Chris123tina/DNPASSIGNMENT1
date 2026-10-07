@@ -14,7 +14,7 @@
       <ProjectReference Include="..\..\Server\Entities\Entities.csproj" />
       <ProjectReference Include="..\..\Server\FileRepositories\FileRepositories.csproj" />
       <ProjectReference Include="..\..\Server\RepositoryContracts\RepositoryContracts.csproj" />
-      <ProjectReference Include="..\ApiContracts\ApiContracts.csproj" />
+      <ProjectReference Include="..\DTOs\DTOs.csproj" />
     </ItemGroup>
 
 </Project>

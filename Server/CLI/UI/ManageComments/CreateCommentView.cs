@@ -72,9 +72,9 @@ public class CreateCommentView
         }
         Comment comment = new Comment
         {
-            body = body,
-            userId = userId,
-            postId = postId
+            Body = body,
+            UserId = userId,
+            PostId = postId
         };
 
         Comment createdComment =
