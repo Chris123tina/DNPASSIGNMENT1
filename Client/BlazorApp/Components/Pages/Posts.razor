@@ -1,0 +1,33 @@
+﻿@page "/posts"
+@using ApiContracts
+@using Blazor.Components.Services
+@inject IPostService PostService
+
+<h3>All Posts</h3>
+
+@if (posts == null)
+{
+    <p>Loading posts...</p>
+}
+else
+{
+    @foreach (var post in posts)
+    {
+        <div>
+            <h4>
+                <a href="@($"/posts/{post.Id}")">
+                    @post.Title
+                </a>
+            </h4>
+        </div>
+    }
+}
+
+@code {
+    private List<PostDto>? posts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        posts = await PostService.GetPostsAsync();
+    }
+}

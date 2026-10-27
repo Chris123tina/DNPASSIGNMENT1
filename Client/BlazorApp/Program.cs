@@ -1,4 +1,6 @@
 using Blazor.Components;
+using Blazor.Components.Services;
+using BlazorApp.HttpServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,6 +8,27 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
+builder.Services.AddHttpClient("ForumApi", client =>
+{
+    client.BaseAddress = new Uri("http://localhost:5036/");
+});
+builder.Services.AddScoped<IUserService>(sp =>
+    new HttpUserService(
+        sp.GetRequiredService<IHttpClientFactory>()
+            .CreateClient("ForumApi")
+    ));
+builder.Services.AddScoped<IPostService>(sp =>
+    new HttpPostService(
+        sp.GetRequiredService<IHttpClientFactory>()
+            .CreateClient("ForumApi")
+    ));
+
+
+builder.Services.AddScoped<ICommentService>(sp =>
+    new HttpCommentService(
+        sp.GetRequiredService<IHttpClientFactory>()
+            .CreateClient("ForumApi")
+    ));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
